@@ -22,7 +22,11 @@ echo <<<EOT
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 	</head>
 	<body>
-    <nav class="navtop">
+    <nav class="navtop"
+	style="
+	background-color: #333333;
+	"
+	>
     	<div>
     		<h1>Imam Web Crud</h1>
             <a href="index.php"><i class="fas fa-home"></i>Home</a>
@@ -33,19 +37,25 @@ EOT;
 }
 function template_footer() {
 echo <<<EOT
-
-<html>
-	<head>
-		<title>Contacts</title>
-		<link href="style.css" rel="stylesheet" type="text/css">
-	</head>
 	<body>
-		<footer>
-			<p>&copy; 2024 by Imam Ariadi</p>
+		<footer style="
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			background-color: #333;
+			color: white;
+			text-align: center;
+			padding: 10px 0;
+		">
+			<p style="
+			margin: 0;
+			">&copy; 2024 by Imam Ariadi</p>
 		</footer>
 	</body>
-</html>
-
 EOT;
 }
 ?>

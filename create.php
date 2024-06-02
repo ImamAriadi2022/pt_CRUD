@@ -21,11 +21,10 @@ if (!empty($_POST)) {
 }
 ?>
 
-
 <?=template_header('Create')?>
 
 <div class="content update">
-	<h2>Create Contact</h2>
+    <h2>Create Contact</h2>
     <form action="create.php" method="post">
         <label for="id">ID</label>
         <label for="nama">Nama</label>
@@ -41,6 +40,18 @@ if (!empty($_POST)) {
     </form>
     <?php if ($msg): ?>
     <p><?=$msg?></p>
+    <a href="read.php" class="back-button"
+    style="
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #FF8826;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    "
+    >Back</a>
     <?php endif; ?>
 </div>
 
