@@ -43,6 +43,18 @@ if (isset($_GET['id'])) {
         <a href="delete.php?id=<?=$contact['id']?>&confirm=no">No</a>
     </div>
     <?php endif; ?>
+    <a href="read.php" class="back-button"
+    style="
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #38b673;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    "
+    >Back</a>
 </div>
 
 <?=template_footer()?>

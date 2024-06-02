@@ -50,6 +50,18 @@ if (isset($_GET['id'])) {
     </form>
     <?php if ($msg): ?>
     <p><?=$msg?></p>
+    <a href="read.php" class="back-button"
+    style="
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #FF8826;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    "
+    >Back</a>
     <?php endif; ?>
 </div>
 
